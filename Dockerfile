@@ -16,4 +16,7 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
-CMD [ "npm", "start" ]
+
+#CMD [ "npm", "start" ]
+CMD [ "/bin/sh", "-c", "HOST=$(hostname); sed -i.bak -e \"s/__HOST__/$HOST/\" /usr/src/app/src/components/App.js; npm start" ]
+
