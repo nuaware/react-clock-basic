@@ -1,1 +1,1 @@
-docker run -d --rm -p 4444:8080 mjbright/clock $*
+docker run -d --rm -p 4444:8080 nuaware/clock $*

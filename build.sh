@@ -1,2 +1,2 @@
-docker build -t mjbright/clock .
-docker push mjbright/clock
+docker build -t nuaware/clock .
+docker push nuaware/clock
